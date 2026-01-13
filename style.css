@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +13,7 @@
     font-style: normal;
 }
 
-/* shared  styles */
+/* shared styles */
 .display-flex {
     display: flex;
 }
@@ -40,11 +40,17 @@
     font-size: 1.25rem;
     font-weight: 600;
     padding: 20px 25px;
-    border-style: none;
+    border: 0.3px solid rgba(0, 0, 0, 0.167);
     border-radius: 8px;
 }
 
-main>section {
+.btn-primary:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #FF900E;
+}
+
+main > section {
     margin-top: 120px;
 }
 
@@ -54,17 +60,17 @@ main>section {
 }
 
 
-/* header styles */
+/* header related styles */
 header {
     max-width: 100%;
 }
 
 /* navbar related styles */
 .navbar {
-    padding-top: 45px;
-    padding-bottom: 115px;
+    padding-top: 50px;
+    padding-bottom: 110px;
     justify-content: space-between;
-    /* gap: 350px; */
+    /* gap: 300px; */
     align-items: center;
 }
 
@@ -86,6 +92,11 @@ header {
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
+}
+
+.nav-link:hover{
+    color: #FF900E;
+    font-weight: bold;
 }
 
 .navbar,
@@ -120,6 +131,7 @@ header {
 .banner .banner-img img {
     max-width: 100%;
     margin: 0 auto;
+    padding-bottom: 25px;
 }
 
 /* main related styles */

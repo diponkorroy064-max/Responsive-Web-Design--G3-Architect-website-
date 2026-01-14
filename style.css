@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -44,13 +44,13 @@
     border-radius: 8px;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     cursor: pointer;
     background-color: white;
     color: #FF900E;
 }
 
-main > section {
+main>section {
     margin-top: 120px;
 }
 
@@ -94,7 +94,7 @@ header {
     font-weight: 500;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #FF900E;
     font-weight: bold;
 }
@@ -136,7 +136,7 @@ header {
 
 /* main related styles */
 main {
-    max-width: 75%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -152,8 +152,8 @@ main {
 }
 
 .our-features {
-    margin-left: 130px;
-    max-width: 530px;
+    margin-left: 30px;
+    max-width: 700px;
 }
 
 #quick-list {
@@ -168,12 +168,14 @@ main {
 #feature-section-title {
     border-left: 5px solid #FF900E;
     padding-left: 20px;
+    margin-bottom: 10px;
 }
 
 .feature-card {
-    padding: 30px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 30px 0 rgb(0, 0, 0, 0.06);
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -185,7 +187,7 @@ main {
 }
 
 #experience-badge {
-    padding: 45px 42px;
+    padding: 40px 36px;
     margin-left: -100px;
     margin-top: -100px;
 }
@@ -231,6 +233,8 @@ main {
 
 .feature-description {
     max-width: 540px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .facts-container {
@@ -238,8 +242,18 @@ main {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.some-fact-container {
+    margin: 0 auto;
+}
+
 
 /* sponsor related styles */
+.section-title {
+    font-size: 45px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
 .sponcer-info {
     max-width: 540px;
     margin: 50px auto;
@@ -257,23 +271,24 @@ main {
 
 
 /* footer related styles */
-.footer-container{
+.footer-container {
     background-color: #FFF4E7;
     padding: 39px 200px;
-    max-width: 75%;
+    max-width: 80%;
     margin: 0 auto;
     border-radius: 8px;
     margin-bottom: 130px;
     text-align: center;
 }
 
- main{
+main {
     margin-bottom: 130px;
- }
+}
 
 
 /* reponsive media query */
 @media screen and (max-width:576px) {
+
     .navbar,
     .nav-links,
     .features,
@@ -305,6 +320,7 @@ main {
 
 /* medium size device */
 @media screen and (min-width:576px) and (max-width:992px) {
+
     .teams,
     .features {
         flex-direction: column;

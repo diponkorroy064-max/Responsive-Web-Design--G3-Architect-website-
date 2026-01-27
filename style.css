@@ -13,7 +13,7 @@
     font-style: normal;
 }
 
-/* shared styles */
+/*-------- shared styles ------------------*/
 .display-flex {
     display: flex;
 }
@@ -60,12 +60,12 @@ main>section {
 }
 
 
-/* header related styles */
+/*----------- header related styles -----------*/
 header {
     max-width: 100%;
 }
 
-/* navbar related styles */
+/*--------- navbar related styles -----------*/
 .navbar {
     padding-top: 50px;
     padding-bottom: 110px;
@@ -106,7 +106,7 @@ header {
     margin: 0 auto;
 }
 
-/* banner related style */
+/*---------- banner related style -------------*/
 .banner-content {
     /* max-width: 850px; */
     margin: 0 auto;
@@ -129,12 +129,14 @@ header {
 }
 
 .banner .banner-img img {
+    display: flex;
+    justify-content: center;
     max-width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding-bottom: 25px;
 }
 
-/* main related styles */
+/*-------- main section related styles ----------*/
 main {
     max-width: 80%;
     margin: 0 auto;
@@ -160,7 +162,7 @@ main {
     font-weight: 500;
 }
 
-/* features section related styles */
+/*--------- features section related styles --------------*/
 .features {
     gap: 80px;
 }
@@ -207,7 +209,7 @@ main {
 }
 
 
-/* some fact related styles */
+/*------------- some fact section related styles -----------*/
 .fact-card {
     border: 1px solid #FF900E;
     width: 240px;
@@ -247,7 +249,7 @@ main {
 }
 
 
-/* sponsor related styles */
+/*---------- sponsor related styles -----------*/
 .section-title {
     font-size: 45px;
     font-weight: bold;
@@ -270,10 +272,10 @@ main {
 }
 
 
-/* footer related styles */
+/*--------- footer related styles -----------*/
 .footer-container {
     background-color: #FFF4E7;
-    padding: 39px 200px;
+    padding: 39px 80px;
     max-width: 80%;
     margin: 0 auto;
     border-radius: 8px;
@@ -286,8 +288,11 @@ main {
 }
 
 
-/* reponsive media query */
+/*---------- reponsive media query ------------*/
 @media screen and (max-width:576px) {
+    .brand{
+        padding-bottom: 25px;
+    }
 
     .navbar,
     .nav-links,
@@ -305,7 +310,7 @@ main {
     .facts-container,
     .sponsor-companies {
         justify-items: center;
-        gap: 20px;
+        gap: 40px;
     }
 
     .our-features {
@@ -313,13 +318,14 @@ main {
     }
 
     #experience-badge {
+        padding: 26px 20px;
         margin-left: 20px;
         margin-top: 20px;
     }
 }
 
-/* medium size device */
-@media screen and (min-width:576px) and (max-width:992px) {
+/*----------- medium size device ---------------*/
+@media screen and (min-width:577px) and (max-width:992px) {
 
     .teams,
     .features {
@@ -342,3 +348,4 @@ main {
         margin-top: 20px;
     }
 }
+
